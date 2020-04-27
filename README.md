@@ -5,6 +5,6 @@ This program logs file status by running a series of system calls.  The system c
 
 I compiled this program using the GCC version 9.3.0_1 compiler (g++-9) on macOS.  I used CLion as my IDE.  CLion uses CMake and this program uses CXX_STANDARD 20. 
 
-I have included a UNIX executable under 'releases'.  The executible can be downloaded and ran from the terminal by typing ./<filename> 
+I have included a UNIX executable under 'releases'.  The executible can be downloaded and ran from the terminal by typing ./File_Audit_System_cpp
 
 
