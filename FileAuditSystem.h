@@ -4,7 +4,6 @@
 #include <string>
 #include <filesystem>
 #include <thread>
-#include <functional>
 
 
 namespace fs = std::filesystem;
@@ -32,7 +31,7 @@ public:
 
     std::string timestamp(const std::string& s);
 
-    bool startThread(std::string path);
+    bool startThread(const std::string& path);
 
     void stopThread();
 };
