@@ -5,7 +5,6 @@
 #include <filesystem>
 #include <thread>
 
-
 namespace fs = std::filesystem;
 
 class FileAuditSystem {

@@ -17,13 +17,13 @@ FileAuditSystem::~FileAuditSystem() {
 }
 
 bool FileAuditSystem::startThread(const std::string& path) {
-   auto path_to_directory = path;
-   try {
+    auto path_to_directory = path;
+    try {
         std::thread* thread_obj = new std::thread(&FileAuditSystem::startTimer, this, path_to_directory);
         this->thread_ = thread_obj;
         return true;
-   }
-   catch (const std::exception& e) {
+    }
+    catch (const std::exception& e) {
         std::cout << "Error during threading process" << std::endl;
         std::cerr << e.what() << std::endl;
         return false;
