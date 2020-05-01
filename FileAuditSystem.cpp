@@ -16,7 +16,7 @@ FileAuditSystem::~FileAuditSystem() {
     delete this->thread_;
 }
 
-bool FileAuditSystem::startThread(std::string path) {
+bool FileAuditSystem::startThread(const std::string& path) {
     auto path_to_directory = path;
    try {
         std::thread* thread_obj = new std::thread(&FileAuditSystem::startTimer, this, path_to_directory);
